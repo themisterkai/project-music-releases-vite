@@ -14,6 +14,36 @@
             "name": "Capo",
             "type": "artist",
             "uri": "spotify:artist:5y9wg9qkGBl0n9v9RzaPKu"
+          },
+          {
+            "external_urls": {
+              "spotify": "https://open.spotify.com/artist/5y9wg9qkGBl0n9v9RzaPKu"
+            },
+            "href": "https://api.spotify.com/v1/artists/5y9wg9qkGBl0n9v9RzaPKu",
+            "id": "5y9wg9qkGBl0n9v9RzaPKu1",
+            "name": "Capo2",
+            "type": "artist",
+            "uri": "spotify:artist:5y9wg9qkGBl0n9v9RzaPKu"
+          },
+          {
+            "external_urls": {
+              "spotify": "https://open.spotify.com/artist/5y9wg9qkGBl0n9v9RzaPKu"
+            },
+            "href": "https://api.spotify.com/v1/artists/5y9wg9qkGBl0n9v9RzaPKu",
+            "id": "5y9wg9qkGBl0n9v9RzaPKu2",
+            "name": "Capo3",
+            "type": "artist",
+            "uri": "spotify:artist:5y9wg9qkGBl0n9v9RzaPKu"
+          },
+          {
+            "external_urls": {
+              "spotify": "https://open.spotify.com/artist/5y9wg9qkGBl0n9v9RzaPKu"
+            },
+            "href": "https://api.spotify.com/v1/artists/5y9wg9qkGBl0n9v9RzaPKu",
+            "id": "5y9wg9qkGBl0n9v9RzaPKu2d",
+            "name": "Capo444",
+            "type": "artist",
+            "uri": "spotify:artist:5y9wg9qkGBl0n9v9RzaPKu"
           }
         ],
         "available_markets": [
