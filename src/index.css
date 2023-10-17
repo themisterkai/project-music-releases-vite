@@ -84,7 +84,8 @@ h3 {
 }
 
 .icons-container {
-  filter: invert(100%) sepia(0%) saturate(7499%) hue-rotate(357deg) brightness(108%) contrast(102%);
+  filter: invert(100%) sepia(0%) saturate(7499%) hue-rotate(357deg)
+    brightness(108%) contrast(102%);
   position: absolute;
   width: 100%;
   display: none;
@@ -93,7 +94,7 @@ h3 {
   top: 45%;
 }
 
-.image-overlay .play-icon{
+.image-overlay .play-icon {
   transform: scale(1.8);
   transition: 0.3s ease;
 }
@@ -108,7 +109,8 @@ h3 {
   opacity: 0.6;
 }
 
-.heart-icon:hover, .dots-icon:hover {
+.heart-icon:hover,
+.dots-icon:hover {
   transform: scale(1.2);
   transition: 0.3s ease;
   opacity: 1;

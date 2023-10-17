@@ -1,6 +1,5 @@
 // import { PropTypes } from "prop-types";
 
-
 export const HoverOverlay = () => {
   return (
     <div className="image-overlay">
@@ -10,9 +9,9 @@ export const HoverOverlay = () => {
         <img className="dots-icon" src="/dots.svg" alt="dots icon" />
       </div>
     </div>
-  )
+  );
 };
 
 HoverOverlay.propTypes = {
   // title: PropTypes.object.isRequired,
-}
+};
