@@ -2,7 +2,7 @@ import { PropTypes } from "prop-types";
 
 export const ArtistName = ({ artists }) => {
   return (
-    <div className="artistName">
+    <div className="artist-name">
       {artists.map((artist, idx, arr) => {
         let separator = "";
         if (idx === arr.length - 2) {

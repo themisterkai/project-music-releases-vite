@@ -9,5 +9,5 @@ export const Header = ({ title }) => {
 };
 
 Header.propTypes = {
-  title: PropTypes.object.isRequired,
+  title: PropTypes.string.isRequired,
 };

@@ -8,19 +8,19 @@ a {
   color: white;
 }
 
-.albumCollection {
+.album-collection {
   grid-gap: 25px;
   display: grid;
   grid-template-columns: 1fr;
 }
 
 @media (min-width: 667px) {
-  .albumCollection {
+  .album-collection {
     grid-template-columns: 1fr 1fr;
   }
 }
 @media (min-width: 1025px) {
-  .albumCollection {
+  .album-collection {
     grid-template-columns: 1fr 1fr 1fr 1fr;
   }
 }
@@ -29,7 +29,7 @@ a {
   margin: 10px;
 }
 
-.artistName {
+.artist-name {
   font-family: Helvetica, sans-serif;
   font-size: 14px;
   color: #a0a0a0;
@@ -37,17 +37,17 @@ a {
   font-weight: bold;
 }
 
-.artistName a {
+.artist-name a {
   color: #a0a0a0;
   text-decoration: none;
 }
 
-.artistName a:hover {
+.artist-name a:hover {
   color: #a0a0a0;
   text-decoration: underline;
 }
 
-.albumName {
+.album-name {
   font-family: Helvetica, sans-serif;
   font-size: 14px;
   color: white;
@@ -55,12 +55,12 @@ a {
   font-weight: bold;
 }
 
-.albumName a {
+.album-name a {
   color: white;
   text-decoration: none;
 }
 
-.albumName a:hover {
+.album-name a:hover {
   color: white;
   text-decoration: underline;
 }

@@ -2,7 +2,7 @@ import { PropTypes } from "prop-types";
 
 export const AlbumName = ({ albumName, link }) => {
   return (
-    <div className="albumName">
+    <div className="album-name">
       <a href={link} target={`_blank`}>
         {albumName}
       </a>

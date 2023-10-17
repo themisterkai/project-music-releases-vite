@@ -1,13 +1,13 @@
-import data from "./data.json";
 import { Album } from "./components/Album";
 import { Header } from "./components/Header";
+import data from "./data.json";
 
 export const App = () => {
   return (
     <div>
       <div>
         <Header title="New singles" />
-        <div className="albumCollection">
+        <div className="album-collection">
           {data.albums.items
             .filter((album) => album.album_type === "single")
             .map((album) => {
@@ -21,7 +21,7 @@ export const App = () => {
       </div>
       <div>
         <Header title="New albums" />
-        <div className="albumCollection">
+        <div className="album-collection">
           {data.albums.items
             .filter((album) => album.album_type === "album")
             .map((album) => {
