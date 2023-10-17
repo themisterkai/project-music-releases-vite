@@ -85,9 +85,21 @@ h3 {
 }
 
 .image-container {
-  max-width: 300px;
-  max-height: 300px;
+  /* height:auto;
+  max-width:600px;
+  width:100% */
+  /* max-width: 300px;
+  max-height: 300px; */
   position: relative;
+}
+
+.image-container img {
+  height: auto;
+  max-width: 600px;
+  width: 100%;
+  /* max-width: 300px;
+  max-height: 300px;
+  position: relative; */
 }
 
 .image-container:hover .image-overlay {
