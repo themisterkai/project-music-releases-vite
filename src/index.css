@@ -9,8 +9,20 @@ a {
 }
 
 .albumCollection {
+  grid-gap: 25px;
   display: grid;
-  grid-template-columns: repeat(4, 1fr);
+  grid-template-columns: 1fr;
+}
+
+@media (min-width: 667px) {
+  .albumCollection {
+    grid-template-columns: 1fr 1fr;
+  }
+}
+@media (min-width: 1025px) {
+  .albumCollection {
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+  }
 }
 
 .album {
