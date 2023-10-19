@@ -1,0 +1,35 @@
+import { PropTypes } from 'prop-types';
+
+import { Header } from './Header';
+
+export const Sidebar = ({ isNavOpen, setIsNavOpen, playlists }) => {
+  console.log(playlists);
+  return (
+    <>
+      <button
+        className={`sidebar-toggle ${
+          isNavOpen ? 'sidebar-toggle-open' : 'sidebar-toggle-closed'
+        }`}
+        onClick={() => setIsNavOpen(!isNavOpen)}
+      >
+        <span className="material-symbols-outlined">menu</span>
+      </button>
+      <nav className={`nav ${isNavOpen ? 'nav-open' : 'nav-closed'}`}>
+        <div className="nav-content">
+          <Header title={'Playlists'} />
+          <ul>
+            <li> First</li>
+            <li> Second</li>
+            <li> Third</li>
+          </ul>
+        </div>
+      </nav>
+    </>
+  );
+};
+
+Sidebar.propTypes = {
+  isNavOpen: PropTypes.bool.isRequired,
+  setIsNavOpen: PropTypes.func.isRequired,
+  playlists: PropTypes.array.isRequired,
+};
