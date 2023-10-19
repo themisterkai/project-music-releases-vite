@@ -194,11 +194,15 @@ h3 {
   background-color: black;
   overflow-x: hidden;
   transition: 0.5s;
-  padding-top: 60px;
+  padding-top: 20px;
   padding-left: 10px;
   padding-right: 10px;
   display: flex;
   flex-direction: column;
+}
+
+.nav-content {
+  margin-bottom: 20px;
 }
 
 .playlist-container {
