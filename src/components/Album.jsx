@@ -22,7 +22,10 @@ const getSeparator = (idx, arrayLength) => {
 export const Album = ({ album }) => {
   return (
     <div className="album-container">
-      <CoverImage images={album.images} />
+      <CoverImage
+        imageSrc={album.images.find(image => image.height === 640).url}
+        withHover
+      />
       <AlbumName albumName={album.name} link={album.external_urls.spotify} />
       {album.artists.map((artist, idx) => {
         return (

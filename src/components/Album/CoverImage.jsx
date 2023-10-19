@@ -1,16 +1,17 @@
-import { PropTypes } from "prop-types";
+import { PropTypes } from 'prop-types';
 
-import { HoverOverlay } from "./HoverOverlay";
+import { HoverOverlay } from './HoverOverlay';
 
-export const CoverImage = ({ images }) => {
+export const CoverImage = ({ imageSrc, withHover }) => {
   return (
     <div className="image-container">
-      <HoverOverlay />
-      <img src={images.find((image) => image.height === 300).url}></img>
+      {withHover ? <HoverOverlay /> : <></>}
+      <img src={imageSrc}></img>
     </div>
   );
 };
 
 CoverImage.propTypes = {
-  images: PropTypes.array.isRequired,
+  withHover: PropTypes.bool.isRequired,
+  imageSrc: PropTypes.string.isRequired,
 };

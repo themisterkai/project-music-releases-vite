@@ -1,6 +1,7 @@
 import { PropTypes } from 'prop-types';
 
 import { Header } from './Header';
+import { Playlist } from './Sidebar/Playlist';
 
 export const Sidebar = ({ isNavOpen, setIsNavOpen, playlists }) => {
   console.log(playlists);
@@ -17,11 +18,9 @@ export const Sidebar = ({ isNavOpen, setIsNavOpen, playlists }) => {
       <nav className={`nav ${isNavOpen ? 'nav-open' : 'nav-closed'}`}>
         <div className="nav-content">
           <Header title={'Playlists'} />
-          <ul>
-            <li> First</li>
-            <li> Second</li>
-            <li> Third</li>
-          </ul>
+          {playlists.map(playlist => (
+            <Playlist key={playlist.id} playlist={playlist} />
+          ))}
         </div>
       </nav>
     </>
