@@ -227,8 +227,7 @@ h3 {
   color: #a0a0a0;
   margin: 14px 0px;
   margin-top: -10px;
-  /* margin-bottom: 30px; */
-  /* font-weight: bold; */
+  font-weight: bold;
 }
 
 .nav-open {

@@ -12,6 +12,6 @@ export const CoverImage = ({ imageSrc, withHover }) => {
 };
 
 CoverImage.propTypes = {
-  withHover: PropTypes.bool.isRequired,
+  withHover: PropTypes.bool,
   imageSrc: PropTypes.string.isRequired,
 };
