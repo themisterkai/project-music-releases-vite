@@ -14,13 +14,19 @@ export const Sidebar = ({
   setHeaderName,
 }) => {
   const filterAlbumData = filter => {
-    if (filter == null) {
+    if (filter == '') {
       setAlbumData(albumData);
     } else {
       const filtered = albumData.filter(album => album.album_type === filter);
       setAlbumData(filtered);
     }
+
+    // close the navbar on mobile and tablet when link is clicked
+    if (window.screen.width < 1024) {
+      setIsNavOpen(false);
+    }
   };
+
   return (
     <>
       <button
@@ -53,7 +59,7 @@ export const Sidebar = ({
               description={headerSinglesAlbums}
               onClick={filterAlbumData}
               setHeaderName={setHeaderName}
-              type={null}
+              type={''}
             />
           </div>
           <Header title={'Playlists'} />

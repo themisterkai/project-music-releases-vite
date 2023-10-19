@@ -3,9 +3,10 @@ import { PropTypes } from 'prop-types';
 export const SidebarLink = ({ description, onClick, type }) => {
   return (
     <a
-      href="javascript:void(0)"
+      href="#"
       onClick={() => {
         onClick(type);
+        return false;
       }}
     >
       <h2>{description}</h2>
