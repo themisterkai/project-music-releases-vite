@@ -203,6 +203,22 @@ h3 {
 
 .playlist-container {
   max-width: 300px;
+  display: inline-block;
+}
+
+.playlist-container .image-container {
+  width: 80px;
+  display: inline-block;
+}
+
+.playlist-text {
+  width: 200px;
+  display: inline-block;
+  margin-left: 10px;
+}
+
+.pl .playlist-description .album-name {
+  display: inline-block;
 }
 
 .playlist-description {
@@ -211,7 +227,7 @@ h3 {
   color: #a0a0a0;
   margin: 14px 0px;
   margin-top: -10px;
-  margin-bottom: 30px;
+  /* margin-bottom: 30px; */
   /* font-weight: bold; */
 }
 
