@@ -250,7 +250,7 @@ h3 {
 }
 
 .album-extra {
-  margin: -2px;
+  margin: -3px -2px;
   padding-top: 9px;
   border-color: rgba(83, 82, 82, 0.8);
   background-color: rgba(83, 82, 82, 0.8);

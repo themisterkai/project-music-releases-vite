@@ -32,10 +32,3 @@ CoverImage.propTypes = {
   releaseDate: PropTypes.string,
   trackCount: PropTypes.number,
 };
-
-//{' '}
-//  <div className="album-extra">
-// <ReleaseDate releaseDate={album.release_date} />
-// <TracksInfo trackCount={album.total_tracks} />
-//{' '}
-// </div>
