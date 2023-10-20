@@ -3,7 +3,7 @@ import { PropTypes } from 'prop-types';
 import { Header } from './Header';
 import { Playlist } from './Sidebar/Playlist';
 import { SidebarLink } from './Sidebar/SidebarLink';
-import { headerAlbums, headerSingles, headerSinglesAlbums } from '../contants';
+import { sidebarLinks } from '../contants';
 
 export const Sidebar = ({
   isNavOpen,
@@ -12,6 +12,7 @@ export const Sidebar = ({
   albumData,
   setAlbumData,
   setHeaderName,
+  headerName,
 }) => {
   const filterAlbumData = filter => {
     if (filter == '') {
@@ -39,28 +40,18 @@ export const Sidebar = ({
       </button>
       <nav className={`nav ${isNavOpen ? 'nav-open' : 'nav-closed'}`}>
         <div className="nav-content">
-          <div onClick={() => setHeaderName(headerSingles)}>
-            <SidebarLink
-              description={headerSingles}
-              onClick={filterAlbumData}
-              type={'single'}
-            />
-          </div>
-          <div onClick={() => setHeaderName(headerAlbums)}>
-            <SidebarLink
-              description={headerAlbums}
-              onClick={filterAlbumData}
-              setHeaderName={setHeaderName}
-              type={'album'}
-            />
-          </div>
-          <div onClick={() => setHeaderName(headerSinglesAlbums)}>
-            <SidebarLink
-              description={headerSinglesAlbums}
-              onClick={filterAlbumData}
-              setHeaderName={setHeaderName}
-              type={''}
-            />
+          <div className="nav-links">
+            {sidebarLinks.map(({ description, type }) => (
+              <div key={type} onClick={() => setHeaderName(description)}>
+                <SidebarLink
+                  description={description}
+                  onClick={filterAlbumData}
+                  setHeaderName={setHeaderName}
+                  type={type}
+                  disable={headerName === description}
+                />
+              </div>
+            ))}
           </div>
           <Header title={'Playlists'} />
           {playlists.map(playlist => (
@@ -79,4 +70,5 @@ Sidebar.propTypes = {
   albumData: PropTypes.array.isRequired,
   setAlbumData: PropTypes.func.isRequired,
   setHeaderName: PropTypes.func.isRequired,
+  headerName: PropTypes.string.isRequired,
 };

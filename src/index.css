@@ -249,3 +249,16 @@ h3 {
 .nav-closed .nav-content {
   visibility: hidden;
 }
+
+.link-disabled {
+  color: #a0a0a0;
+}
+
+.nav-links {
+  margin-top: 30px;
+  margin-bottom: 60px;
+}
+
+.nav-links h2 {
+  margin: 10px 0px;
+}
