@@ -2,7 +2,7 @@ import { PropTypes } from 'prop-types';
 
 import { CoverImage } from '../Album/CoverImage';
 import { AlbumName } from '../Album/AlbumName';
-import { PlaylistDescription } from './PlaylistDescription';
+import { TracksInfo } from '../Album/TracksInfo';
 
 export const Playlist = ({ playlist }) => {
   return (
@@ -13,7 +13,7 @@ export const Playlist = ({ playlist }) => {
           albumName={playlist.name}
           link={playlist.external_urls.spotify}
         />
-        <PlaylistDescription description={`${playlist.tracks.total} tracks`} />
+        <TracksInfo trackCount={`${playlist.tracks.total}`} />
       </div>
     </div>
   );

@@ -4,12 +4,12 @@ import { Album } from './components/Album';
 import { Header } from './components/Header';
 import { Sidebar } from './components/Sidebar';
 import { headerSinglesAlbums } from './contants';
-import data from './data.json';
+import { albums } from './data.json';
 import { playlists } from './stretched-goal.json';
 
 export const App = () => {
   const [isNavOpen, setIsNavOpen] = useState(false);
-  const [albumData, setAlbumData] = useState(data.albums.items);
+  const [albumData, setAlbumData] = useState(albums.items);
   const [headerName, setHeaderName] = useState(headerSinglesAlbums);
   return (
     <div>
@@ -18,7 +18,7 @@ export const App = () => {
         setIsNavOpen={setIsNavOpen}
         playlists={playlists.items}
         setAlbumData={setAlbumData}
-        albumData={data.albums.items}
+        albumData={albums.items}
         setHeaderName={setHeaderName}
         headerName={headerName}
       />

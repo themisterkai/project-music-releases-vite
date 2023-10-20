@@ -106,11 +106,14 @@ h3 {
   width:100% */
   /* max-width: 300px;
   max-height: 300px; */
+  aspect-ratio: 1 / 1;
   position: relative;
+  max-width: 600px;
+  width: 100%;
 }
 
 .image-container img {
-  height: auto;
+  /* height: auto; */
   max-width: 600px;
   width: 100%;
   /* max-width: 300px;
@@ -222,17 +225,48 @@ h3 {
   margin-left: 5px;
 }
 
-.pl .playlist-description .album-name {
+.tracks-info {
+  font-size: 14px;
+  color: #a0a0a0;
+  font-weight: bold;
+}
+
+.pl .tracks-info .album-name {
   display: inline-block;
 }
 
-.playlist-description {
+.release-date {
   font-family: Helvetica, sans-serif;
   font-size: 14px;
   color: #a0a0a0;
   margin: 14px 0px;
   margin-top: -10px;
   font-weight: bold;
+}
+
+.image-container:hover .album-extra {
+  transition: 0.4s ease;
+  display: block;
+}
+
+.album-extra {
+  margin: -2px;
+  padding-top: 9px;
+  border-color: rgba(83, 82, 82, 0.8);
+  background-color: rgba(83, 82, 82, 0.8);
+  width: max-content;
+  float: right;
+  z-index: 3;
+  display: none;
+}
+
+.album-extra .release-date,
+.album-extra .tracks-info {
+  color: rgb(207, 207, 207);
+  font-size: 14px;
+  font-weight: 400;
+  margin-top: -10px;
+  padding: 3px;
 }
 
 .nav-open {

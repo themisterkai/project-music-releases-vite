@@ -25,6 +25,8 @@ export const Album = ({ album }) => {
       <CoverImage
         imageSrc={album.images.find(image => image.height === 640).url}
         withHover
+        releaseDate={album.release_date}
+        trackCount={album.total_tracks}
       />
       <AlbumName albumName={album.name} link={album.external_urls.spotify} />
       {album.artists.map((artist, idx) => {
