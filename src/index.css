@@ -263,9 +263,9 @@ h3 {
 .album-extra .release-date,
 .album-extra .tracks-info {
   color: rgb(207, 207, 207);
-  font-size: 14px;
-  font-weight: 400;
-  margin-top: -10px;
+  font-size: 12px;
+  font-weight: 550;
+  margin-top: -12px;
   padding: 3px;
 }
 
