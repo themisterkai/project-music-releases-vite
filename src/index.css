@@ -6,7 +6,8 @@ body {
 
 .main-container {
   transition: 0.5s;
-  padding-left: 60px;
+  padding-left: 90px;
+
 }
 
 .main-container-open {
@@ -134,7 +135,7 @@ h3 {
 }
 
 .nav {
-  width: 310px;
+  width: 320px;
   position: fixed;
   z-index: 2;
   top: 0;
