@@ -2,7 +2,7 @@ import { PropTypes } from 'prop-types';
 
 import { CoverImage } from '../CoverImage';
 import { AlbumName } from '../AlbumName';
-import { TracksInfo } from '../TracksInfo';
+import { TracksInfo } from '../Album/TracksInfo';
 
 export const Playlist = ({ playlist }) => {
   return (
