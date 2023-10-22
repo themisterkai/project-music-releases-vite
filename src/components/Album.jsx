@@ -1,8 +1,8 @@
 import { PropTypes } from 'prop-types';
 
-import { AlbumName } from './AlbumName';
-import { ArtistName } from './ArtistName';
-import { CoverImage } from './CoverImage';
+import { AlbumName } from './Album/AlbumName';
+import { ArtistName } from './Album/ArtistName';
+import { CoverImage } from './Album/CoverImage';
 
 export const Album = ({ album }) => {
   const image = album.images.find(image => image.height === 640);

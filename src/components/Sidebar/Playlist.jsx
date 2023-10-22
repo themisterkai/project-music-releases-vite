@@ -1,7 +1,7 @@
 import { PropTypes } from 'prop-types';
 
-import { CoverImage } from '../CoverImage';
-import { AlbumName } from '../AlbumName';
+import { CoverImage } from '../Album/CoverImage';
+import { AlbumName } from '../Album/AlbumName';
 import { TracksInfo } from '../Album/TracksInfo';
 
 export const Playlist = ({ playlist }) => {

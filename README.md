@@ -6,9 +6,7 @@
 
 # Music Releases
 
-Replace this readme with your own information about your project.
-
-Start by briefly describing the assignment in a sentence or two. Keep it short and to the point.
+Project by [@themisterkai](https://github.com/themisterkai), [@emeliese](https://github.com/emeliese), and [@intehon](https://github.com/intehon)
 
 ## Getting Started with the Project
 
@@ -24,14 +22,10 @@ npm i && code . && npm run dev
 
 ### The Problem
 
-Describe how you approached to problem, and what tools and techniques you used to solve it. How did you plan? What technologies did you use? If you had more time, what would be next?
+For this project, we implemented a React app that displays Spotify album data. We implemented the project with all the intermediate and advanced stretch goals as well.
+
+To implement some of the more advanced stretch goals, we also used `useState`, such as when showing or hiding our sidebar, or when indicating what header it should render based on what the user has selected.
 
 ### View it live
 
-Every project should be deployed somewhere. Be sure to include the link to the deployed project so that the viewer can click around and see what it's all about.
-
-## Instructions
-
-<a href="instructions.md">
-   See instructions of this project
-  </a>
+[https://phenomenal-arithmetic-829603.netlify.app/](https://phenomenal-arithmetic-829603.netlify.app/)
