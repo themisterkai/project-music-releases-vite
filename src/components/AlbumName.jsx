@@ -4,7 +4,9 @@ import "./AlbumName.css";
 export const AlbumName = ({ albumName, uri }) => {
   return (
     <div className="album-name-link">
-      <a href={uri}>{albumName}</a>
+      <a href={uri} target={`_blank`}>
+        {albumName}
+      </a>
     </div>
   );
 };
