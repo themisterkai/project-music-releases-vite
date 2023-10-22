@@ -1,7 +1,7 @@
 import { PropTypes } from 'prop-types';
 import { HoverOverlay } from './HoverOverlay';
-import { ReleaseDate } from './Album/ReleaseDate';
-import { TracksInfo } from './Album/TracksInfo';
+import { ReleaseDate } from './ReleaseDate';
+import { TracksInfo } from './TracksInfo';
 
 export const CoverImage = ({
   img,
